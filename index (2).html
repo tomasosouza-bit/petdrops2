@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetDropBR - Achadinhos Pet</title>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --secondary: #f39c12;
+            --bg: #fdfbf7;
+            --text: #333;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background-color: var(--primary);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s;
+        }
+        .product-card:hover { transform: scale(1.02); }
+        .badge {
+            background: var(--secondary);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        h2 { margin: 0 0 10px; font-size: 1.2rem; }
+        p { font-size: 0.9rem; margin: 0 0 10px; color: #666; }
+        .price { font-weight: bold; color: var(--primary); font-size: 1.1rem; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 0.9rem; margin-left: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">PD</div>
+            <h1>@petdropbr</h1>
+            <p>Os melhores achadinhos para seu pet!</p>
+        </header>
+
+        <div id="products-list">
+            <!-- Produto único -->
+            <a href="https://s.shopee.com.br/3VjMgFhL7n" target="_blank" class="product-card">
+                <span class="badge">🔥 Achadinho Top</span>
+                <h2>Escova a Vapor para Pets 3 em 1</h2>
+                <p>Remove pelos soltos, desengrata nós e faz uma massagem suave com vapor d'água.</p>
+                <div class="price">R$ 16,90 <span class="old-price">R$ 25,90</span></div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
